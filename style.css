@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&family=Tangerine:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Serif Text", serif;
+}
+body {
+  background: url(./image/AI-ROBOT-PANIC.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-family: "Bebas Neue", serif;
+  margin: 50px auto 20px;
+}
+#text-box {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  width: 600px;
+  margin: 60px auto 20px;
+}
+#text-holder {
+  position: relative;
+  text-align: center;
+  padding: 20px 60px;
+}
+#solve-btn {
+  position: absolute;
+  margin: auto 20px;
+  padding: 20px 60px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: linear-gradient(60deg, red, green, yellow, purple);
+  transition: all 10s ease-in-out;
+  cursor: pointer;
+}
+#solve-btn:hover {
+  background: linear-gradient(60deg, purple, red, green, yellow);
+  color: #fff;
+  font-weight: bolder;
+}
+#result {
+  margin-top: 20px;
+  padding: 20px;
+  width: 90%;
+  min-width: 500px;
+  min-height: 50px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-left: 40px;
+  background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Soft border */
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  backdrop-filter: blur(10px); /* Glass effect */
+  display: none; /* Hidden by default */
+  flex: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+#result.show {
+  display: block; /* Show when answer is available */
+  opacity: 1;
+}
